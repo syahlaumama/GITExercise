@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="" ng-init="GMS='19999';TMD='3000'">
+        <table>
+            <tr>
+                <td>Groos Montly Salary</td>
+                <td><input type="text" ng-model="GMS" /></td>
+            </tr>
+
+            <tr>
+                <td>Tax Deducation</td>
+                <td><input type="text" ng-model="TMD" /></td>
+            </tr>
+        </table>
+        <p>
+            Net Salary : {{GMS - TMD}}
+        </p>
+    </div>
+</body>
+</html>

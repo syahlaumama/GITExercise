@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RMN - JQuery Mobile</title>
+    <link rel="stylesheet" href="asset/themes/Blue.min.css" />
+    <link rel="stylesheet" href="asset/jquery.mobile.icons-1.4.5.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <div id="main" data-role="page">
+      <header data-role="header" data-position="fixed" data-theme="b">
+        <h1>
+          <img
+            src="images/ccit.png"
+            height="100px"
+            alt="Header Image"
+            style="display: inline"
+          />
+        </h1>
+        <a href="index.html" class="ui-btn ui-shadow ui.corner all ui-btn-icon-left ui-icon carat-1">Back</a>
+      </header>
+      <div id="content" data-role="main" class="ui-content">
+        <h3>Select a Product:</h3>
+        <ul data-role="listview">
+          <li><a href="ledtv.html">LED TV</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+          <li><a href="laptop.html">Laptop</a></li>
+          <li><a href="desktop.html">Desktop</a></li>
+        </ul>
+
+        <form
+          id="productform"
+          action="productform.aspx"
+          method="post"
+          class="ui-filterable"
+        >
+        <hr/>
+        <h3>Sample Filter:</h3>
+          <input id="listfilter" data-type="search" />
+          <ol
+            data-role="listview"
+            data-filter="true"
+            data-input="#listfilter"
+            data-inset="true"
+          >
+            <li><a href="#">Smart Phone</a></li>
+            <li><a href="#">Desktop Computer</a></li>
+            <li><a href="#">Laptop</a></li>
+            <li><a href="#">Printer</a></li>
+            <li><a href="#">Tablet Phone</a></li>
+            <li><a href="#">SLR Camera</a></li>
+            <li><a href="#">DSLR Camera</a></li>
+            <li><a href="#">DVD Player</a></li>
+            <li><a href="#">LED TV</a></li>
+          </ol>
+          <input type="submit" value="Submit" data-inline="true" />
+        </form>
+        <hr/>
+        <div data-role="collapsible" data-collapsed="true">
+            <h2>Books and Media:</h2>             
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#">Academic & Professional</a></li>
+                <li><a href="#">Business & Management</a></li>     
+                <li><a href="#">Literature & Fiction</a></li>
+                <li><a href="#">Entrance Exam</a></li>
+                <li><a href="#">Comics</a></li>
+            </ul>
+            </div>
+            <ul data-role="listview" data-inset="true" data-theme="b">
+                <li data-role="list-divider">Electronics: </li>
+                <li><a href="#">Smart Phone</a></li>
+                <li><a href="#">Desktop Computer</a></li>
+                <li data-role="list-divider"> Books and Media:</li>
+                <li><a href="#">Academic & Professional</a></li>
+                <li><a href="#">Business & Management</a></li>     
+                <li data-role="list-divider">Home and Kitchen:</li>
+                <li><a href="#">Kitchen Appliances</a></li>
+                <li><a href="#">Home Appliances</a></li>
+           </ul>
+           <ul data-role="listview" data-inset='true' data-theme="b">
+            <li> <img src='images/ccit.png' class='ui-li-icon' />
+            <h3 style='margin-left: 15px'>HLC Desire 301</h3>
+            </li>
+            <li data-theme="b"> <img src='images/ccit.png'/>
+            <h3 style='margin-left: 15px'>Parker 220</h3>
+            </li>
+            <li> <img src='images/ccit.png'/>
+            <h3 style='margin-left: 15px'>Primus Tab 300</h3>
+            </li>
+       </ul>
+       
+      </div>
+
+      <footer data-role="footer" data-position="fixed" data-theme="b">
+        <h3>&copy; Copyright - RMN 2022</h3>
+      </footer>
+    </div>
+  </body>
+</html>

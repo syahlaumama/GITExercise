@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/jquery.mobile-1.4.5.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <div id="main" data-role="page"> 
+        <header data-role="header" data-position="fixed" data-theme="b">
+            <h1><img src="images/ccit.png" height="100px" alt="Header Image" style="display:inline"/> </h1> <h1>Student</h1>
+            <a href="index.html" class="ui-btn ui-shadow ui-corner-all ul-btn-icon-left ui-icon-carat-1">Back</a> 
+        </header>
+
+        <div data-role-"content" class="ui-content customfont"> 
+            <div data-demo-html="true"> 
+                <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+        
+                    <thead> 
+                        <tr>
+                            <th data-priority="2">No.</th> 
+                            <th>Name</th> 
+                            <th data-priority="1">Code</th>
+                            <th data-priority="3">Photo</th> 
+                        </tr> 
+                    </thead> 
+
+                    <tbody>
+                        <tr> 
+                            <th>1</th> 
+                            <td>Steve Rogers</td>
+                            <td>AVE081</td>
+                            <td><img src="images/man.png"/></td> 
+                        </tr> 
+                        <tr>
+                            <th>2</th> 
+                            <td>Tony Stark</td> 
+                            <td>AVE002</td>
+                            <td><img src="images/man.png"/></td> 
+                        </tr> 
+                        <tr>
+                            <th>3</th> 
+                            <td>Natasha Romanoff</td> 
+                            <td>AVE083</td> 
+                            <td><img src="images/woman.png"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+        </div> 
+        
+        <footer data-role="footer" data-position="fixed" data-theme="b">
+            <h3>&copy; Copyright - RMN 2822 </h3> 
+        </footer> 
+    </div>
+
+</body>
+</html>
